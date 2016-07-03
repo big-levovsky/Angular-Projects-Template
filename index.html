@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="intraTest">
+    <head>
+        <meta charset="UTF-8">
+        <title>Intra Test</title>
+
+        <link rel="stylesheet" href="assets/css/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+        <script src="assets/libs/angular.min.js"></script>
+        <script src="assets/libs/angular-route.min.js"></script>
+
+        <script src="app/app.module.js"></script>
+        <script src="app/app.routes.js"></script>
+
+        <script src="app/components/home/homeController.js"></script>
+    </head>
+
+    <body ng-controller="MainCtrl as main">
+
+        <div ng-view></div>
+        {{main.x}} {{main.func(6)}}
+    </body>
+</html>
